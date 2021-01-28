@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#start-game, #game, #end-game {
+    height: 100vh;
+    background-color: #FFC107;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start-game {
+    display: flex;
+    flex-direction: column;
+}
+
+#start-game h1 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+#start-game input {
+    height: 50px;
+    line-height: 50px;
+    width: 400px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#start-game input:focus {
+    border: 1px solid #000;
+}
+
+#game {
+    display: none;
+}
+
+#end-game {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#end-game h1 {
+    margin-bottom: 30px;
+}
+
+#end-game h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.game-container {
+    margin-right: 100px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+    padding: 0 50px 50px;
+}
+
+.game {
+    padding: 50px;
+}
+
+.game-info {
+    display: flex;
+    margin: 20px 0;
+    padding: 20px 0;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.game-info p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.game-info .score-box {
+    border-right: 3px solid #000;
+}
+
+.game-info p .score, .game-info p .time {
+    font-weight: 600;
+}
+
+#game h2 {
+    padding: 20px;
+    background-color: #0984e3;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#primary-number,
+#secondary-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 125px;
+    height: 125px;
+    box-sizing: border-box;
+}
+
+#primary-number {
+    border: solid 4px #0984e3;
+}
+
+#secondary-number {
+    border: solid 4px #0984e3;
+}
+
+#operator,
+#equal {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 30px;
+}
+
+#game input {
+    border: solid 4px #0984e3;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    outline: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: solid 1px #000;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+/* LEADER BOARD */
+.lb-wrapper {
+    width: 500px;
+    transition: transform .3s ease-out;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 4px;
+}
+
+.list-header,
+.list-item {
+    height: 60px;
+    background-color: #faf7f8;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+}
+
+.list-header {
+    line-height: 60px;
+}
+
+.list-player-wrapper {
+    max-height: 380px;
+    overflow: auto;
+}
+
+.list-item {
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #fff;
+}
+
+.list-header .list-rank,
+.list-item .list-rank {
+    flex: 0 0 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4B79CC;
+    font-weight: 400;
+}
+
+.list-header .list-info,
+.list-item .list-info {
+    flex: 0 0 70%;
+}
+
+.list-header .list-info {
+    color: #4B79CC;
+}
+
+.list-header .list-score,
+.list-item .list-score {
+    flex: 0 0 15%;
+}
+
+.list-header .list-score {
+    color: #4B79CC;
+}
+
+.list-item .list-info {
+    display: flex;
+    align-items: center;
+}
+
+.list-item .list-score {
+    line-height: 60px;
+}
+
+.list-score .top-item-icon {
+    margin-right: .3rem;
+    color: #FFC107;
+}
+
+.list-score .top-item-point {
+    color: #272627;
+}
+
+.list-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-score {
+    flex: 0 0 20%;
+}

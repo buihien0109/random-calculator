@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="start-game">
+        <h1 class="title">Random Calculator</h1>
+        <input type="text" placeholder="Enter name ..." id="user-name" autocomplete="off">
+        <input type="text" placeholder="Enter avatar ..." id="user-avatar" autocomplete="off">
+        <button id="btn-start-game">Start game</button>
+    </div>
+    <div id="game">
+        <div class="game-container">
+            <h2>Thử tài tính toán nào bạn ơi!</h2>
+            <div class="game-info">
+                <p class="score-box">Điểm : <span class="score"></span></p>
+                <p class="time-box">Thời gian : <span class="time"></span></p>
+            </div>
+            <div class="main">
+                <div id="primary-number">7</div>
+                <div id="operator">+</div>
+                <div id="secondary-number">10</div>
+                <div id="equal">=</div>
+                <div>
+                    <input type="text" id="guess">
+                </div>
+            </div>
+        </div>
+        <div class="lb-wrapper">
+            <h2>Bảng xếp hạng</h2>
+            <div class="lb-list">
+                <div class="list-header">
+                    <div class="list-rank"></div>
+                    <div class="list-info">Học viên</div>
+                    <div class="list-score">Điểm</div>
+                </div>
+                <div class="list-player-wrapper">
+                    <div class="list-player">
+                        <!-- RENDER OTHER RANK STUDENT -->
+                        <div class="list-item">
+                            <div class="list-rank">1</div>
+                            <div class="list-info">
+                                <img src="https://techmaster.vn/media/static/crop/brp4jgc51co0c1746n90" alt="hien">
+                                <div class="info">
+                                    <span class="name">Bùi Văn Hiên</span>
+                                </div>
+                            </div>
+                            <div class="list-score">
+                                <span class="top-item-icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="top-item-point">10</span>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-rank">2</div>
+                            <div class="list-info">
+                                <img src="https://techmaster.vn/media/static/crop/brp4jgc51co0c1746n90" alt="hien">
+                                <div class="info">
+                                    <span class="name">Tào Thúy Quỳnh</span>
+                                </div>
+                            </div>
+                            <div class="list-score">
+                                <span class="top-item-icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="top-item-point">7</span>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-rank">3</div>
+                            <div class="list-info">
+                                <img src="https://techmaster.vn/media/static/crop/brp4jgc51co0c1746n90" alt="hien">
+                                <div class="info">
+                                    <span class="name">Nguyễn Hàn Duy</span>
+                                </div>
+                            </div>
+                            <div class="list-score">
+                                <span class="top-item-icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="top-item-point">6</span>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="list-rank">4</div>
+                            <div class="list-info">
+                                <img src="https://techmaster.vn/media/static/crop/brp4jgc51co0c1746n90" alt="hien">
+                                <div class="info">
+                                    <span class="name">Trương Minh Thúy</span>
+                                </div>
+                            </div>
+                            <div class="list-score">
+                                <span class="top-item-icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="top-item-point">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="end-game">
+        <h1>Chúc mừng bạn đã hoàn thành bài kiểm tra</h1>
+        <h2 class="message">Điểm của bạn là: 0</h2>
+        <div class="btn-group">
+            <button class="btn-play-again">Chơi lại</button>
+            <button class="btn-exit-game">Thoát game</button>
+        </div>
+    </div> 
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
